@@ -93,7 +93,7 @@ scrollLinks.forEach(function (link) {
         const fixedNav = navBar.classList.contains("fixed-nav");
 
         // for increased window size, if the navBar is not present, the value is still subtracted for first navigation
-        // for the case when the navBar is not present, the value of navBarHeight is still subtracted so that the first navigation makes it to the actual section
+        // this is done so that navigation makes it to the actual section
         if (!fixedNav) {
             position = position - navBarHeight;
         }
