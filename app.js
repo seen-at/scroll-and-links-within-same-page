@@ -85,7 +85,7 @@ scrollLinks.forEach(function (link) {
 
         // offsetTop - A Number, representing the top position of the element, in pixels
         // the position of the section is assigned in the variable position
-        // the section is off by the height of the navBar and the top portion is not seen to the value of the navBarheight is subtracted
+        // the section is off by the height of the navBar and the top portion is not seen, so the value of the navBarheight is subtracted
         let position = element.offsetTop - navBarHeight;
         console.log(position)
 
