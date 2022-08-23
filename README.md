@@ -1,3 +1,6 @@
+VIEW THE PROJECT HERE: https://cozy-heliotrope-ed0568.netlify.app/
+
+
 Instead of using toggles of the button for closing links in the nav-bar as the window size decreases, this is done dynamically. Adding the class 'show-links' with the height is hard-coded can cause newly added links to not appear, or extra space in case links are removed. 
 
 'element.getBoundingClientRect()'' method returns the size of an element and its position relative to the viewport. The height of the links-container is obtained by 'linksContainer.getBoundingClientRect().height.' It is 0 in case of decreased window size. The height of all the links combined is obtained as well. The hamburger-menu to open the linksContainer giving it the height of all the links. This is done by assigning the height of all the links combined to the links-container;  linksContainer.style.height = `${linksHeight}px`, and assigned to a value of 0 to close it. 
